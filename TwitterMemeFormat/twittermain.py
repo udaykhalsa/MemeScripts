@@ -37,11 +37,11 @@ print('Select profile picture for the account\r')
 sleep(1.5)
 
 
-# root = tk.Tk()
-# root.withdraw()
-# image_file = filedialog.askopenfilename()
+root = tk.Tk()
+root.withdraw()
+image_file = filedialog.askopenfilename()
 
-profile_pic = Image.open('modi.png', mode='r')
+profile_pic = Image.open(image_file, mode='r')
 
 profile_pic = profile_pic.resize((55, 55))
 
